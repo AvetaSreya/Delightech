@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delightech Innovations | Technology & Strategic Security</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .heading-font { font-family: 'Montserrat', sans-serif; }
+        
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
+        }
+
+        #lightbox { transition: opacity 0.3s ease; }
+        .gallery-img {
+            transition: transform 0.3s ease, filter 0.3s ease;
+            cursor: zoom-in;
+            border: 1px solid #e2e8f0;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+        .founder-frame {
+            position: relative;
+            border-radius: 2rem;
+            overflow: hidden;
+            border: 8px solid white;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+        .partner-logo {
+            height: 64px;
+            width: 64px;
+            object-fit: contain;
+            background: white;
+            padding: 4px;
+            border-radius: 12px;
+        }
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div id="lightbox" class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center p-4" onclick="closeLightbox()">
+        <button class="absolute top-8 right-8 text-white text-5xl font-light">&times;</button>
+        <img id="lightbox-img" src="" class="max-w-full max-h-full rounded-lg shadow-2xl" onclick="event.stopPropagation()">
+    </div>
+
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="logo.jpeg" alt="Delightech Logo" class="h-12 w-auto rounded-md shadow-sm" onerror="this.src='https://via.placeholder.com/50?text=D'">
+                <span class="text-xl font-extrabold heading-font uppercase tracking-tighter">Delightech <span class="text-blue-600">Innovations</span></span>
+            </div>
+            <div class="hidden lg:flex space-x-8 font-semibold text-slate-600 text-xs uppercase tracking-widest">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#collaborations" class="hover:text-blue-600 transition">Partners</a>
+                <a href="#training" class="hover:text-blue-600 transition">Coaching</a>
+                <a href="#founder" class="hover:text-blue-600 transition">Founder</a>
+                <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full shadow-md hover:bg-blue-700 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-pattern min-h-[80vh] flex items-center pt-20">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center text-left">
+            <div data-aos="fade-right">
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-white leading-tight heading-font">
+                    National <span class="text-blue-500">Security</span> & Technical Excellence
+                </h1>
+                <p class="mt-8 text-xl text-slate-400 leading-relaxed max-w-xl">
+                    Delivering AI-driven innovation and professional training in collaboration with India's leading strategic institutions.
+                </p>
+            </div>
+            <div class="hidden lg:block" data-aos="zoom-in">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" class="rounded-3xl shadow-2xl border border-white/10">
+            </div>
+        </div>
+    </section>
+
+    <section id="collaborations" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-slate-900 heading-font uppercase tracking-tight">Strategic Partnerships</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100 mb-12" data-aos="fade-up">
+                <div class="flex items-center gap-6 mb-8">
+                    <img src="chsslogo.jpeg" alt="CHSS Logo" class="partner-logo shadow-lg border border-slate-100" onerror="this.src='https://via.placeholder.com/64?text=CHSS'">
+                    <div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-slate-900">Center for Human Security Studies (CHSS)</h3>
+                        <p class="text-blue-600 font-bold text-xs uppercase tracking-widest mt-1">Strategic Think Tank Partner</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <img src="chss1.jpeg" class="gallery-img w-full h-44 object-cover rounded-2xl shadow-sm" onclick="openLightbox(this.src)">
+                    <img src="chss2.jpeg" class="gallery-img w-full h-44 object-cover rounded-2xl shadow-sm" onclick="openLightbox(this.src)">
+                    <img src="chss3.jpeg" class="gallery-img w-full h-44 object-cover rounded-2xl shadow-sm" onclick="openLightbox(this.src)">
+                    <img src="chss4.jpeg" class="gallery-img w-full h-44 object-cover rounded-2xl shadow-sm" onclick="openLightbox(this.src)">
+                    <img src="chss5.jpeg" class="gallery-img w-full h-44 object-cover rounded-2xl shadow-sm" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+
+            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100" data-aos="fade-up">
+                <div class="flex items-center gap-6 mb-8">
+                    <img src="escilogo.png" alt="ESCI Logo" class="partner-logo shadow-lg border border-slate-100" onerror="this.src='https://via.placeholder.com/64?text=ESCI'">
+                    <div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-slate-900">ESCI Hyderabad</h3>
+                        <p class="text-blue-600 font-bold text-xs uppercase tracking-widest mt-1">Technical Training Partner</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <img src="esci1.jpeg" class="gallery-img w-full h-44 object-cover rounded-2xl shadow-sm" onclick="openLightbox(this.src)">
+                    <img src="esci2.jpeg" class="gallery-img w-full h-44 object-cover rounded-2xl shadow-sm" onclick="openLightbox(this.src)">
+                    <img src="esci3.jpeg" class="gallery-img w-full h-44 object-cover rounded-2xl shadow-sm" onclick="openLightbox(this.src)">
+                    <img src="esci4.jpeg" class="gallery-img w-full h-44 object-cover rounded-2xl shadow-sm" onclick="openLightbox(this.src)">
+                    <img src="esci5.jpeg" class="gallery-img w-full h-44 object-cover rounded-2xl shadow-sm" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="training" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 heading-font">Academic Coaching Programs</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl bg-slate-50 border-t-4 border-blue-600 shadow-sm hover:translate-y-[-8px] transition duration-300" data-aos="fade-up">
+                    <h3 class="text-2xl font-bold mb-4">B.Tech / Engineering</h3>
+                    <p class="text-slate-600">Specialized guidance for engineering graduates in AI, Security, and Industrial R&D projects.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border-t-4 border-slate-900 shadow-sm hover:translate-y-[-8px] transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold mb-4">Degree Students</h3>
+                    <p class="text-slate-600">Bridging the gap for B.Sc and BCA students through industry-aligned technical skill-building.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border-t-4 border-blue-400 shadow-sm hover:translate-y-[-8px] transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-2xl font-bold mb-4">Polytechnic</h3>
+                    <p class="text-slate-600">Hands-on practical training and workshops for diploma holders and technical vocational students.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="founder" class="py-24 bg-slate-900 text-white overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-16 items-center">
+                <div class="lg:col-span-5 flex justify-center" data-aos="fade-right">
+                    <div class="founder-frame w-full max-w-sm aspect-[4/5] bg-slate-800">
+                        <img src="founder_image.jpeg" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700" onerror="this.src='https://via.placeholder.com/400x500'">
+                    </div>
+                </div>
+                <div class="lg:col-span-7" data-aos="fade-left">
+                    <div class="w-16 h-1 bg-blue-600 mb-6"></div>
+                    <div class="flex items-center gap-4 mb-2">
+                        <h2 class="text-4xl md:text-5xl font-bold heading-font">Shanthi Chebrole</h2>
+                        <div class="flex gap-3">
+                            <a href="https://www.linkedin.com" target="_blank" class="text-blue-500 hover:text-white transition text-2xl"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:delightech@delightechy.com" class="text-slate-400 hover:text-white transition text-2xl"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <p class="text-blue-500 font-bold uppercase tracking-widest text-sm mb-8">Founder & CEO, Delightech Innovation</p>
+                    <div class="space-y-6 text-slate-300 text-lg leading-relaxed text-left">
+                        <p>Shanthi is a visionary leader with over **15 years of experience** in the technology sector. She has a proven track record of building successful large-scale projects and mentoring students to achieve their full potential.</p>
+                        <p class="italic bg-slate-800/50 p-6 rounded-2xl border-l-4 border-blue-600">"Leadership at Delightech is centered on creativity, practical application, and a relentless pursuit of excellence."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-slate-50 rounded-3xl p-8 md:p-12 shadow-xl border border-slate-100">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold heading-font">Get In Touch</h2>
+                    <p class="text-slate-500 mt-2">Have questions about our training programs? Reach out to us.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 text-left">
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white text-xl">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email Us</h4>
+                                <p class="text-slate-600">delightech@delightechy.com</p>
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=delightech@delightechy.com&su=Inquiry%20Regarding%20Training%20Programs" target="_blank" class="inline-flex items-center gap-3 bg-white border-2 border-red-500 text-red-600 px-6 py-3 rounded-xl font-bold hover:bg-red-500 hover:text-white transition duration-300">
+                                <i class="fab fa-google"></i> Open in Gmail
+                            </a>
+                        </div>
+                    </div>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full px-5 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        <textarea placeholder="How can we help you?" rows="4" class="w-full px-5 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                        <button type="button" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl shadow-lg hover:bg-blue-700 transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 py-12 text-center border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <p class="text-slate-500 text-sm font-bold uppercase tracking-widest">&copy; 2026 Delightech Innovations Pvt Ltd.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        function openLightbox(src) {
+            const lb = document.getElementById('lightbox');
+            document.getElementById('lightbox-img').src = src;
+            lb.classList.remove('hidden');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
